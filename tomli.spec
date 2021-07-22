@@ -4,7 +4,7 @@
 #
 Name     : tomli
 Version  : 1.0.4
-Release  : 2
+Release  : 3
 URL      : https://files.pythonhosted.org/packages/5f/9e/0aa632eb780a5e3ff22e3c125dd10859eaccb49404c64b49ce3d517f7e4c/tomli-1.0.4.tar.gz
 Source0  : https://files.pythonhosted.org/packages/5f/9e/0aa632eb780a5e3ff22e3c125dd10859eaccb49404c64b49ce3d517f7e4c/tomli-1.0.4.tar.gz
 Summary  : A lil' TOML parser
