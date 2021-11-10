@@ -4,7 +4,7 @@
 #
 Name     : tomli
 Version  : 1.2.2
-Release  : 7
+Release  : 8
 URL      : https://files.pythonhosted.org/packages/aa/5b/62165da80cbc6e1779f342234c7ddc6c6bc9e64cef149046a9c0456f912b/tomli-1.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/aa/5b/62165da80cbc6e1779f342234c7ddc6c6bc9e64cef149046a9c0456f912b/tomli-1.2.2.tar.gz
 Summary  : A lil' TOML parser
@@ -42,6 +42,7 @@ python components for the tomli package.
 Summary: python3 components for the tomli package.
 Group: Default
 Requires: python3-core
+Provides: pypi(tomli)
 
 %description python3
 python3 components for the tomli package.
@@ -56,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1636525855
+export SOURCE_DATE_EPOCH=1636526718
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
