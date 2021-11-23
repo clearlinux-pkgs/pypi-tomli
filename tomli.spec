@@ -4,7 +4,7 @@
 #
 Name     : tomli
 Version  : 1.2.2
-Release  : 8
+Release  : 9
 URL      : https://files.pythonhosted.org/packages/aa/5b/62165da80cbc6e1779f342234c7ddc6c6bc9e64cef149046a9c0456f912b/tomli-1.2.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/aa/5b/62165da80cbc6e1779f342234c7ddc6c6bc9e64cef149046a9c0456f912b/tomli-1.2.2.tar.gz
 Summary  : A lil' TOML parser
@@ -14,7 +14,7 @@ Requires: tomli-license = %{version}-%{release}
 Requires: tomli-python = %{version}-%{release}
 Requires: tomli-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
-BuildRequires : flit_core
+BuildRequires : pypi(flit_core)
 
 %description
 [![Build Status](https://github.com/hukkin/tomli/workflows/Tests/badge.svg?branch=master)](https://github.com/hukkin/tomli/actions?query=workflow%3ATests+branch%3Amaster+event%3Apush)
@@ -57,7 +57,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1636526718
+export SOURCE_DATE_EPOCH=1637687757
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -74,7 +74,7 @@ export MAKEFLAGS=%{?_smp_mflags}
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/tomli
 cp %{_builddir}/tomli-1.2.2/LICENSE %{buildroot}/usr/share/package-licenses/tomli/9da6ca26337a886fb3e8d30efd4aeda623dc9ade
-python3 -m install --destdir=%{buildroot} dist/*.whl
+pip install --root=%{buildroot} --no-deps --ignore-installed dist/*.whl
 echo ----[ mark ]----
 cat %{buildroot}/usr/lib/python3*/site-packages/*/requires.txt || :
 echo ----[ mark ]----
