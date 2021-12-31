@@ -1,4 +1,3 @@
 # This file contains recursive sources that require this package
 build
-coverage
 setuptools_scm
