@@ -7,7 +7,7 @@
 #
 Name     : pypi-tomli
 Version  : 2.2.1
-Release  : 29
+Release  : 30
 URL      : https://files.pythonhosted.org/packages/18/87/302344fed471e44a87289cf4967697d07e532f2421fdaf868a303cbae4ff/tomli-2.2.1.tar.gz
 Source0  : https://files.pythonhosted.org/packages/18/87/302344fed471e44a87289cf4967697d07e532f2421fdaf868a303cbae4ff/tomli-2.2.1.tar.gz
 Summary  : A lil' TOML parser
